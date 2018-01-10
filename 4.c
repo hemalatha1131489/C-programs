@@ -3,15 +3,15 @@
 int main()
 {
 char ch;
-scanf("%d",&ch);
+scanf("%c",&ch);
 printf("Enter a character");
-if((ch>='a'&& ch>='z') || (ch>='A' && ch>='Z'))
+if((ch>='a'&& ch<='z') || (ch>='A' && ch<='Z'))
 {
-printf("%d is a ALPHABET ",ch);
+printf("%c is a ALPHABET \t",ch);
 }
 else
 {
-printf("%d is not an alphabet",ch);
+printf("%c is not an alphabet\t",ch);
 }
 return 0;
 }
