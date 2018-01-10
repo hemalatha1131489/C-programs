@@ -6,9 +6,10 @@ scanf("%d%d",&n,&k);
 printf("%d",n,k);
 for(i=0;i<=n;i++)
 {
-printf("\n%d",&a[i]);
+  scanf("%d",&a[i]);
+printf("\t%d",a[i]);
 }
-for(i=0;i<=k;i++)
+for(i=0;i<k;i++)
 {
 k=k+i;
 }
