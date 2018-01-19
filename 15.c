@@ -7,12 +7,12 @@ printf("\nEnter the first number");
 scanf("%d",&firstnumber);
 printf("\nEnter the last number");
 scanf("%d",&lastnumber);
-for(i=1;i<=lastnumber;i++)
+for(i=firstnumber+1;i<lastnumber;i++)
 {
-if(count%2==0)
+count=i%2;
+  if(count==0)
 {
-count++;
-printf("%d",count);
+printf("\n%d",i);
 }
 }
 return 0;
