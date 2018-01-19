@@ -12,11 +12,11 @@ num/=10;
 }
 if(ans==num)
 {
-printf("\n%d is a palindrome");
+printf("\nYes %d is a palindrome",num);
 }
 else
 {
-printf("\n%d is not a palindrome");
+printf("\nNO %d is not a palindrome",num);
 }
 return 0;
 }
