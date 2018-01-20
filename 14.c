@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-int firstnumber,lastnumber,temp=0;
+int i,firstnumber,lastnumber,temp=0;
 printf("\nEnter the first number");
 scanf("%d",&firstnumber);
 printf("\nEnter the second number");
