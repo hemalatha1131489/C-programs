@@ -2,13 +2,14 @@
 #include<stdio.h>
 int main()
 {
-int number,i;
+int number,count=0;
 printf("Enter the number");
 scanf("%d",&number);
-for(i=0;i<number;i++)
+while(number!=0)
 {
-number=number%10;
+number=number/10;
+  count++;
 }
-printf("\n%d Digits are present in the integer",number);
+printf("\n%d Digits are present in the integer",count);
 return 0;
 }
