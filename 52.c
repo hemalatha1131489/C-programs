@@ -2,42 +2,42 @@
 #include<stdio.h>
 int main()
 {
-int num,ch;
+int ch;
 printf("Enter the number");
-scanf("%d",&num);
 scanf("%d",&ch);
+  printf("\n%d",ch);
 switch(ch)
 {
 case 1:
-printf("one");
+printf("\none");
 break;
 case 2:
-printf("Two");
+printf("\nTwo");
 break;
 case 3:
-printf("Three");
+printf("\nThree");
 break;
 case 4:
-printf("Four");
+printf("\nFour");
 break;
 case 5:
-printf("Five");
+printf("\nFive");
 break;
 case 6:
-printf("Six");
+printf("\nSix");
 break;
 case 7:
-printf("Seven");
+printf("\nSeven");
 break;
 case 8:
-printf("Eight");
+printf("\nEight");
 break;
 case 9:
-printf("Nine");
+printf("\nNine");
 break;
 case 10:
-printf("Ten");
-break
+printf("\nTen");
+break;
 }
 return 0;
 }
