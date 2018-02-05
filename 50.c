@@ -2,18 +2,14 @@
 #include<stdio.h>
 int main()
 {
-int num;
+int num,a;
 printf("Enter the number");
-scanf("%d",&num);
-while(num!=1)
-{
-if(num%2!=0)
-{
-num/=2;
-}
-printf("\nYES");
-}
-else
-printf("\n%d is not a power of 2",num);
-return 0;
-}
+  scanf("%d",&num);
+ a=(num&(num-1));
+  if(a==0)
+    printf("\nYes");
+    else
+      printf("\nNo");
+    return 0;
+  }
+  
