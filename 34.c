@@ -1,17 +1,16 @@
-//count the no.of lines in a paragraph
+//count the lines
 #include<stdio.h>
+#include<string.h>
 int main()
 {
-char a[100];
-int count=0,i;
-printf("Enter the paragraph");
-scanf("%s",&a);
-for(i=0;a[i]!='\0';i++)
-{
-if(a[i]='.');
-{
-count++;
-}}
-printf("\n total lines are:%d",count);
-return 0;
+	char str[100];
+	int count=0,i,l;
+	printf("Enter a paragraph");
+    scanf("%[^\n]s",str);
+    l=strlen(str);
+	for (i = 0; i<l; i++)
+		if (str[i] == '.')
+		count++;
+	printf("\nTotal lines are:%d",count);
+	return 0;
 }
