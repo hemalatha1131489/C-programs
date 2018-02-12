@@ -2,15 +2,29 @@
 #include<stdio.h>
 int main()
 {
-int i.j,mid,n,a[100];
+int a[50],i,j,n,t;
 printf("Enter the total numbers");
 scanf("%d",&n);
 for(i=0;i<n;i++)
 {
 scanf("%d",&a[i]);
-printf("%d",a[i]);
 }
-mid=a[0];
-for(i=1;i<n;i++)
-if(a[i]>mid)
+for(i=0;i<n-1;i++)
 {
+for(j=i+1;j<n;j++)
+{
+if(a[i]>a[j])
+{
+t=a[i];
+a[i]=a[j];
+a[j]=t;
+}
+}}
+printf("\nsorted array is:");
+for(i=0;i<n;i++)
+{
+printf("\n\t%d",a[i]);
+}
+printf("\n median element is:%d",a[n/2]);
+return 0;
+}
