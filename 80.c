@@ -3,13 +3,14 @@
 int main()
 {
 int num,i,m;
-printf("Enter the number");
+printf("Enter the number\n");
 scanf("%d",&num);
 while(num!=0)
 {
 m=num%10;
+  num=num/10;
 if(m%2!=0)
-printf("\n%d",m);
+printf("\t%d",m);
 }
 return 0;
 }
